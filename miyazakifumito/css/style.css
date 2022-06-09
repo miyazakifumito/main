@@ -1,0 +1,326 @@
+@charset "utf-8";
+* { 
+	box-sizing:border-box; 
+	margin:0px; 
+	padding:0px; 
+	font-size:100%; 
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:18px;
+	line-height:2;
+	background:#fff;
+}
+img { 
+	border:none; 
+	max-width:100%; 
+	height:auto; 
+}
+a	{ 
+	color:#666; 
+	text-decoration:none; 
+	transition:0.3s; 
+}
+
+.text-center { 
+	text-align:center; 
+}
+.text-right	{ 
+	text-align:right; 
+}
+.text-left	{ 
+	text-align:left; 
+}
+.m-auto { 
+	margin:auto; 
+}
+
+#container { 
+	max-width:1400px; 
+	margin:0 auto; 
+	padding:0; 
+}
+header { 
+	padding:10px 20px; 
+}
+header #logo img { 
+	width:140px; 
+}
+footer { 
+	text-align:center; 
+	padding:30px 0px 10px; 
+	font-size:0.8rem; 
+	background:#95916c; 
+}
+footer .footer-logo { 
+	width:100px; 
+	margin:50px auto; 
+}
+/* スマホ用調整 */
+@media screen and (max-width:767px){
+	#container { 
+		width:auto; 
+	}
+	footer { 
+		text-align:center; 
+		padding:10px; 
+	}
+	.break-pc { 
+		display:none; 
+	}
+}
+
+
+.mainLayer {
+	position: relative ;
+    height:100vh;
+	min-height:700px;
+}
+.mainLayer .layer-txt {
+     position:absolute;
+     top:100px;
+     left:30px;
+     line-height:1;
+     font-size:5.6rem;
+     font-weight:bold;
+     color:#fff;
+}
+ .mainVideo {
+     position:absolute;
+     width:100%;
+     height:100%;
+     overflow:hidden;
+     background:url("../images/top-shampoo3.jpg") center/cover;
+     z-index:-1;
+ }
+ .mainVideo::after {
+     position:absolute;
+     content:"";
+     background:rgba(0,0,0,0.6);
+ 	left:0;
+ 	top:0;
+     right:0;
+     bottom:0;
+}
+.mainVideo video {
+	position: absolute ;
+	min-width: 100% ;
+	min-height: 100% ;
+	top: 50% ;
+	left: 50% ;
+	transform: translate(-50%,-50%) ;
+}
+.mainLayer .layer-btn {
+    position: absolute ;
+    top:420px;
+    left:30px;
+    padding:0 30px 0 0;
+}
+.mainLayer .layer-btn p {
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#fff;
+}
+.txt-fuchi { 
+	text-shadow:0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000,
+	0 0 10px #000; 
+}
+/* スマホ用調整 */
+@media screen and (max-width:767px){
+	.mainLayer{  }
+	.mainLayer .layer-txt {  }
+	.mainLayer .layer-btn {  }
+}
+
+
+.problem { 
+	background:#95916c; 
+	font-size:1.2rem; 
+	color:#fff; 
+	padding:80px 50px; 
+}
+.problem h2 { 
+	font-size:4.6rem; 
+	font-weight:bold; 
+}
+.problem h3 { 
+	font-size:3.6rem; 
+	font-weight:bold; 
+	margin-top:100px; 
+}
+.problem h4 { 
+	font-size:1.8rem; 
+	font-weight:bold; 
+	color:#fff; 
+}
+.problem h5 { 
+	font-size:1.2rem; 
+	font-weight:bold; 
+	color:#ffc; 
+	background:#666; 
+	display:inline-block; 
+	padding:10px 20px; 
+	margin-top:50px; 
+}
+.problem img.ai { 
+	width:100%; 
+}
+.problem .yesnoRow { 
+	display:flex; 
+	justify-content:space-between; 
+	margin-top:100px; 
+}
+.problem .yesnoBox { 
+	width:50%; 
+	border:solid 2px #fff; 
+	padding:50px; 
+	margin:0 15px; 
+}
+.problem .yes { 
+	background:#eee; 
+	color:#000; 
+	border:solid 2px #f00; 
+}
+.problem .yes h4 { 
+	color:#f00; 
+}
+.problem .yes h5 { 
+	background:#f00; 
+}
+/* スマホ用調整 */
+@media screen and (max-width:767px){
+	.problem { 
+		padding:50px 20px; 
+	}
+	.problem h2 { 
+		font-size:2.4rem; 
+		color:#ff0; 
+		line-height:1.2; 
+		margin-bottom:20px; 
+	}
+	.problem h3 { 
+		font-size:2.2rem; 
+		color:#ff0; 
+		line-height:1.2; 
+		margin-bottom:20px; 
+	}
+	.problem img.ai { 
+		width:100%; 
+	}
+	.problem .yesnoRow { 
+		display:block; 
+	}
+	.problem .yesnoBox { 
+		width:100%; 
+		padding:20px; 
+		margin:0 0 50px 0; 
+	}
+}
+
+
+.cta {
+	padding:50px 30px; 
+}
+.cta h2 { 
+	font-size:2.8rem; 
+	font-weight:bold; 
+	text-align:center; 
+}
+.cta h3 { 
+	font-size:1.8rem; 
+	font-weight:bold; 
+	text-align:center; 
+}
+.cta p { 
+	text-align:center; 
+}
+.cta form { 
+	max-width:420px; 
+	margin:50px auto; 
+}
+.cta .feedback-input { 
+	border-radius:5px; 
+	border:2px solid #f00; 
+	padding:16px; 
+	margin-bottom:15px; 
+	width:100%; 
+}
+.cta .feedback-input:focus { 
+	border:2px solid #000; 
+}
+.ct textarea { 
+	height:150px; 
+	line-height:150%; 
+	resize:vertical; 
+}
+[type="submit"] { 
+	width:100%; 
+	background:#f00; 
+	border-radius:5px; 
+	border:0; cursor:pointer;
+	color:#fff; 
+	font-size:24px; 
+	padding:10px 0px; 
+	transition:all 0.3s; 
+}
+[type="submit"]:hover { 
+	background:#000; 
+}
+/* スマホ用調整 */
+@media screen and (max-width:767px){
+	.cta { 
+		padding:30px 20px; 
+	}
+	.cta h2 { 
+		font-size:1.8rem; 
+	}
+	.cta h3 { 
+		font-size:1.6rem; 
+	}
+}
+
+
+.btnContactArea { 
+	margin:20px 0;
+}
+.btnContactArea a.btn_blue { 
+	display:block; 
+	padding:1.5rem 3.0rem; 
+	border-radius:8px; 
+	transition:0.3s; 
+	max-width:500px; 
+	background:#1e5e04; 
+}
+.btnContactArea a.btn_blue span.bl__text { 
+	display:block; 
+	position:relative; 
+	text-align:center; 
+	color:#fff; 
+	font-size:1.8rem; 
+}
+a.btn_blue:hover { 
+	background:#32a303; 
+}
+/* スマホ用調整 */
+@media screen and (max-width:767px){
+	.btnContactArea a.btn_blue { 
+		max-width:100%; 
+		padding:1.5rem 1.2rem; 
+	}
+	.btnContactArea a.btn_blue span.bl__text { 
+		font-size:1.2rem; 
+	}
+}
+
+
+
+
