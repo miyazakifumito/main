@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+html {
+  font-size: 20px;
+}
+body {
+  font-family: "Kosugi Maru", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  background: url( "../images/bg-cover_01.jpg") center center / cover no-repeat fixed;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #BC272D;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #603813;
+  padding: 30px 0;
+}
+h3 {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+.sp {
+  display: inline;
+}
+.pc {
+  display: none;
+}
+btn-inner {
+  text-align: center;
+}
+a.btn {
+  display: inline-block;
+  border: 2px solid #603813;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 40px 0 0 0;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateY(0px);
+  transition: all 0.3s;
+  background: #603813;
+}
+a.btn :hover {
+  color: #603813;
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 0 #603813;
+}
+header .logo {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+header .logo img {
+  max-width: 100%;
+}
+footer .f-logo {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background: #ccc;
+}
+footer .f-logo img {
+  width: 150px;
+}
+.main-inner {
+  margin: auto;
+  width: 100%;
+  background: #fff;
+}
+nav {
+  padding: 30px 0;
+  background: #BC272D;
+}
+nav ul.icon-navi {
+  display: flex;
+}
+nav ul.icon-navi li {
+  width: calc(100% / 3);
+  justify-content: space-between;
+  text-align: center;
+}
+nav ul.icon-navi li img {
+  width: 120px;
+}
+.summary {
+  padding: 100px 30px;
+}
+.summary .sum-ttl {
+  text-align: center;
+}
+.summary .sum-img {
+  text-align: center;
+  padding: 50px;
+}
+.summary ol {
+  list-style: decimal;
+  padding: 0 20px;
+}
+.howto {
+  background: #F6E821;
+  padding: 60px 20px 100px 20px;
+}
+.how-inner {
+  display: block;
+}
+.howto .howtoBox {
+  background: #fff;
+  width: 100%;
+  padding: 80px 20px;
+  margin: 50px auto;
+  border-radius: 30px;
+}
+.howto .how-icon {
+  text-align: center;
+}
+.howto .how-icon img {
+  width: 100px;
+}
+.howto .how-pic {
+  text-align: center;
+  padding: 50px 0;
+}
+.prize {
+  padding: 80px 0 0 0;
+}
+.prize p {
+  padding: 30px 20px;
+}
+.prize img {
+  width: 100%;
+}
+.terms {
+  background: #eee;
+  padding: 60px 20px;
+}
+.terms .te-txt {
+  padding: 50px 0;
+}
+.terms .te-txt p {
+  margin-bottom: 1.6rem;
+}
+.share {
+  padding: 50px 20px;
+}
+.shar-inner {
+  display: flex;
+}
+.shar-inner .icon {
+  width: calc(100% / 3);
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+.shar-inner .icon img {
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .main-inner {
+    max-width: 900px;
+  }
+  nav ul.icon-navi li img {
+    width: 200px;
+  }
+  .summary ol {
+    padding: 0 100px;
+  }
+  .prize p {
+    padding: 30px 50px;
+  }
+  .terms .te-txt {
+    padding: 50px;
+  }
+  .shar-inner {
+    width: 500px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+   * {
+    font-size: 26px;
+  }
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: inherit;
+  }
+  .main-inner {
+    max-width: 1200px;
+  }
+  nav {
+    padding: 30px 100px;
+  }
+  .how-inner {
+    display: flex;
+  }
+  .howto .howtoBox {
+    margin: 10px;
+  }
+  .howto .how-pic img {
+    width: auto;
+    height: 200px;
+  }
+}
